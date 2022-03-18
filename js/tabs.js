@@ -3,6 +3,9 @@ const tabDescription = document.querySelectorAll('.design__descr')
 const tabImages = document.querySelectorAll('.design-images')
 const leftBlock = document.querySelectorAll('.design-block__img')
 const logo = document.querySelectorAll('.design__title')
+const title = document.title
+console.log(logo);
+
 
 const changeContent = (array, value) => {
     array.forEach((elem) => {
@@ -19,10 +22,10 @@ tabButtons.forEach((tabButton, index) => {
         const dataValue = tabButton.dataset.tabsHandler
 
         //отображение и скрытие блока лого
-        logo.forEach((view, indexView) => {
+        logo.forEach((view, indexView) => {                     //ДОМАШНЕЕ ЗАДАНИЕ ДЕНЬ 1
             if (index === indexView) {
                 view.classList.remove('hidden')
-                document.title = view.innerHTML
+                document.title = view.innerText                 // УСЛОЖНЕННОЕ ЗАДАНИЕ ДЕНЬ 1
             } else {
                 view.classList.add('hidden')
             }
@@ -30,7 +33,7 @@ tabButtons.forEach((tabButton, index) => {
 
         changeContent(tabDescription, dataValue)
         changeContent(tabImages, dataValue)
-        changeContent(leftBlock, dataValue)
+        changeContent(leftBlock, dataValue)                     //ДОМАШНЕЕ ЗАДАНИЕ ДЕНЬ 1
 
         //отображение и скрытие подчеркивания при нажатии на кнопку
         tabButtons.forEach((btn) => {
