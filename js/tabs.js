@@ -3,9 +3,6 @@ const tabDescription = document.querySelectorAll('.design__descr')
 const tabImages = document.querySelectorAll('.design-images')
 const leftBlock = document.querySelectorAll('.design-block__img')
 const logo = document.querySelectorAll('.design__title')
-const title = document.title
-console.log(logo);
-
 
 const changeContent = (array, value) => {
     array.forEach((elem) => {
@@ -44,10 +41,4 @@ tabButtons.forEach((tabButton, index) => {
             }
         })
     })
-
-    //tabButton.addEventListener('click', () => {
-    //    console.log('click2')
-    //})
-    //tabButton.onclick = () => {
-    //    console.log('click');
 })
