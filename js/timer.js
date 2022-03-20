@@ -16,7 +16,7 @@ const updateClock = () => {
     const fMinutes = minutes < 10 ? '0' + minutes : minutes
     const fSeconds = seconds < 10 ? '0' + seconds : seconds
 
-    timerBlock.textContent = `${days}:${fHours}:${fMinutes}:${fSeconds}`        //УСЛОЖНЕННОЕ ЗАДАНИЕ ДЕНЬ 3
+    timerBlock.textContent = `${days} дней ${fHours}:${fMinutes}:${fSeconds}`        //УСЛОЖНЕННОЕ ЗАДАНИЕ ДЕНЬ 3
 
     if (timeRemaining <= 0) {
         clearInterval(interval)
